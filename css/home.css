@@ -1,0 +1,338 @@
+body {
+  background-color: gainsboro;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#headers {
+  position: fixed;
+  top: -0.2%;
+  left: -0.5%;
+  z-index: 999;
+}
+
+#cont {
+  display: flex;
+  position: fixed;
+  z-index: 8;
+  background-color: #2e3192;
+  height: 55px;
+  width: 100%;
+}
+
+.img {
+  background-image: url("https://utils.imimg.com/globalhf/hrd-sp-v29.png");
+  background-repeat: no-repeat;
+  /* position: relative;
+    top: 0%; */
+  background-position: 0 3px;
+  background-size: 232%;
+  height: 40px;
+  width: 15%;
+  margin: 0% 2%;
+}
+
+.best {
+  display: flex;
+  background-color: white;
+  color: black;
+  border: 0.7px solid black;
+  width: 166px;
+  height: 34px;
+  /* font-size: 20px; */
+  text-align: center;
+  margin: 0.8% 0%;
+  border-radius: 5px 0 0 5px;
+}
+
+#searchbar {
+  width: 307px;
+  height: 30px;
+  margin: 2.3% -1px;
+  font-size: 15px;
+  outline: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 13px;
+  margin: 8% 2%;
+}
+
+#mera {
+  margin: 3% 0% 3% -12%;
+}
+
+.search-button {
+  border: none;
+  display: flex;
+  margin: 2.3% 0.8%;
+  width: 104px;
+  height: 36px;
+  font-size: 15px;
+  background-color: #00a699;
+  color: white;
+  border-radius: 0 4px 4px 0;
+}
+
+#prices {
+  border: 1px solid black;
+  background-color: white;
+  color: rgb(12, 12, 80);
+  text-align: center;
+  width: 150px;
+  height: 35px;
+  margin: 0.8% -4%;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+.search-button:hover {
+  background-color: #088f84;
+}
+
+#prices:hover {
+  box-shadow: 0 0 4px 1px rgb(255 255 255 / 50%);
+}
+
+.right {
+  display: grid;
+  /* float: right; */
+  color: white;
+  margin: 0.5% 2% 0% 8%;
+  grid-template-columns: 35% 11% 11% 18% 13%;
+  gap: 13px;
+}
+
+.right > div > span {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.covid {
+  margin: 0% 31%;
+}
+
+/* .right div:hover {
+    
+} */
+
+.mgs,
+.sign {
+  margin: -4% 22%;
+  height: 28px;
+}
+
+#cam {
+  display: flex;
+}
+
+#dropdown1 ul li {
+  display: block;
+  list-style-type: none;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+  .search-text {
+    display: none;
+  }
+
+  .search-button {
+    width: 50px;
+  }
+
+  .img {
+    background-image: url("https://reflectivesafetyjackets.in/wp-content/uploads/2019/11/indiamart-icon.png");
+    background-size: contain;
+    margin-right: 0%;
+  }
+
+  #prices {
+    font-size: 8px;
+    max-width: 80%;
+  }
+
+  .right > div {
+    font-size: 10px;
+  }
+
+  .best {
+    margin-left: -6%;
+  }
+}
+
+.productdiv {
+  margin: 7% 2.5%;
+  margin-top: 0px;
+}
+
+.section-first {
+  display: grid;
+  gap: 150px;
+}
+
+
+#best img {
+  margin: 5% 0%;
+  height: 16px;
+}
+.search-text {
+  margin: 6% 6%;
+}
+#prices > h2 {
+  margin: 6%;
+}
+.section > h2 {
+  margin: 16px;
+  font-weight: 700;
+  color: #100f0f;
+}
+
+.menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px 20px;
+  background: white;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 1px 2px 6px 1px rgb(0 0 0 / 15%);
+  border: 1px solid #dddfe5;
+}
+a {
+  text-decoration: none;
+}
+#sign-btn {
+  margin: 1% 30%;
+  width: 90px;
+  height: 37px;
+  background: #00a699;
+  border: #00a699;
+}
+#sign-btn a {
+  color: #fff;
+}
+.menu > p {
+  color: grey;
+  font-size: 13px;
+  text-align: center;
+}
+.menu > p a {
+  font-size: 13px;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+
+.menu > ul > li img {
+  max-width: 25px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.menu > ul > li:hover img {
+  opacity: 1;
+}
+.menu.active {
+  visibility: visible;
+  opacity: 1;
+}
+.menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  transform: rotate(45deg);
+}
+.menu > ul {
+  margin-left: -20px;
+}
+.menu > ul > li {
+  font-size: 13px;
+  display: flex;
+  margin-top: 6%;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu > ul > li a {
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+.menu > ul > li:hover {
+  color: black;
+}
+.subcat1 {
+  overflow: hidden;
+  margin: 0px -22px;
+}
+.section{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.about{
+  display:flex;
+  margin-top: 20px;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.home{
+  margin: 30px;
+  padding: 10px;
+}
+.home:nth-child(1){
+  background-color: #2e3192;
+  width: 100px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.one{
+ display: flex;
+ border: 1px solid black;
+ color: green;
+ padding: 5px;
+}
+.img1{
+ width: 35px;
+}
+.two{
+display: flex;
+border: 1px solid black;
+color: green;
+padding: 5px;
+margin-top: 5px;
+}
+#product{
+display: flex;
+margin-top: 10px;
+justify-content: space-between;
+}
+#product>div{
+text-align: center;
+}
+#product>div>h2{
+ border: 1px solid black;
+ background-color: #100f0f;
+ color: #dddfe5;
+}
+.us{
+ margin-top: 10px;
+ text-align: center;
+}
